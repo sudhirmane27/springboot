@@ -50,7 +50,7 @@ public class MainController {
 		}
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String displayStudent(@RequestParam String uname,@RequestParam String pass,Model m){
+	public String displayStudent(@RequestParam String uname,@RequestParam String pass, Model m){
 		
 		if(uname.equals("admin")&&pass.equals("admin")) {
 			m.addAttribute("data",service.getAllStudent());
